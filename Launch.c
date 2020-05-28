@@ -4,8 +4,24 @@
 
 int main()
 {
-    menu();
+    int escolha;
 
-    system("pause");
+    menu();
+    scanf("%d", &escolha);
+
+    if (escolha == 1)
+    {
+        printf("oi");
+
+    }
+    else if (escolha == 2)
+    {
+        printf("oi");
+    }
+    else
+    {
+        system("exit");
+    }
+
     return 0;
 }
