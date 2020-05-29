@@ -21,7 +21,7 @@ int main()
     }
     else if (escolha == 3)
     {
-        system("exit");
+        return 0;
     }
 
     system("pause");
