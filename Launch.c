@@ -5,7 +5,7 @@
 
 int main()
 {
-
+    imprimirmapa();
     menu();
     int escolha;
     scanf("%d", &escolha);
