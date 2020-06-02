@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "victor.h"
+#include "guilherme.h"
 
 void funcao()
 {
@@ -24,7 +26,7 @@ void funcao()
         funcao();
         break;
     case 3:
-        return 0;
+        exit;
         break;
 
     default:
