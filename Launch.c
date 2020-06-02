@@ -5,25 +5,38 @@
 
 int main()
 {
-    imprimirmapa();
-    menu();
-    int escolha;
-    scanf("%d", &escolha);
+    int funcao()
+    {
+        int escolha;
 
-    if (escolha == 1)
-    {
-        printf("oi");
-    }
-    else if (escolha == 2)
-    {
-        system("cls");
-        comojogar();
-    }
-    else if (escolha == 3)
-    {
-        return 0;
-    }
+        imprimirmapa();
+        menu();
+        scanf("%d", &escolha);
+        switch (escolha)
+        {
+        case 1:
+            printf("oi");
+            system("pause");
+            system("cls");
+            funcao();
+            break;
+        case 2:
+            system("cls");
+            comojogar();
+            system("pause");
+            system("cls");
+            funcao();
+            break;
+        case 3:
+            return 0;
 
+        default:
+            system("cls");
+            funcao();
+            break;
+        }
+    }
+    funcao();
     system("pause");
     return 0;
 }
