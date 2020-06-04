@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include "varglobal.h"
 #include "eduardo.h"
 #include "victor.h"
 #include "guilherme.h"

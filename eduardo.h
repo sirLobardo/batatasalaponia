@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "victor.h"
-#include "guilherme.h"
 
 int funcao()
 {
