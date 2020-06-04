@@ -3,7 +3,7 @@
 #include "victor.h"
 #include "guilherme.h"
 
-void funcao()
+int funcao()
 {
     int escolha;
 
@@ -13,7 +13,7 @@ void funcao()
     switch (escolha)
     {
     case 1:
-        printf("oi");
+        printf("Lôbo");
         system("pause");
         system("cls");
         funcao();
