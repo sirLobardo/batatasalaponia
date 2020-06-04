@@ -9,14 +9,12 @@ int funcao()
 
     scanf("%d", &escolha);
 
-
-
     switch (escolha)
     {
     case 1:
 
         imprimirmapa();
-=======
+
         printf("oi");
 
         system("pause");
