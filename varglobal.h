@@ -21,7 +21,7 @@ void marcar1(int lin, int col)
     }
     else
     {
-        matriz[lin][col] = '1';
+        mapa[lin][col] = '1';
     }
 
     int funcao();
