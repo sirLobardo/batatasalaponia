@@ -20,6 +20,9 @@ int funcao()
         comojogar();
         system("pause");
         system("cls");
+        regras();
+        system("pause");
+        system("cls");
         funcao();
         break;
     case 3:
