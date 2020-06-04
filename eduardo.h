@@ -7,7 +7,6 @@ int funcao()
 {
     int escolha;
 
-    imprimirmapa();
     menu();
     scanf("%d", &escolha);
     switch (escolha)
