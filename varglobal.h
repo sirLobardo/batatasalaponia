@@ -14,15 +14,14 @@ char mapa[13][13] = {
     {'L', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*'}
 
 };
-void marcarX(int lin, int col)
+void marcar1(int lin, int col)
 {
-    if (lin < 1 || lin > 8 || col < 1 || col > 8)
-    {
+    if (lin = 1 || lin = 12 || col = 1 || col = 12)    {
         printf("Coordenadas invalidas!\n");
     }
     else
     {
-        matriz[lin][col] = 'X';
+        matriz[lin][col] = '1';
     }
 
     int funcao();
