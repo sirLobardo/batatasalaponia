@@ -6,7 +6,8 @@ int funcao()
     int escolha;
 
     menu();
-    scanf("%d", &escolha);
+    scanf(" %[^\n]d", &escolha);
+
     switch (escolha)
     {
     case 1:
