@@ -6,12 +6,19 @@ int funcao()
     int escolha;
 
     menu();
+
     scanf("%d", &escolha);
+
+
 
     switch (escolha)
     {
     case 1:
+
         imprimirmapa();
+=======
+        printf("oi");
+
         system("pause");
         system("cls");
         funcao();
