@@ -12,7 +12,11 @@
    }
 
  void marcar1(int lin, int col) {
-	 mapa [lin][col] = '1'; 
+ 	if(lin < 2 || col < 2 || lin > 11 || col > 11 || lin == 6 || lin == 7){
+		 printf("coordenadas invalidas\n\n");		 	 
+	 }else	 {
+		 mapa [lin][col] = '1';
+	 }	  
  }
  int marcarsoldados() {
 	 int i, j;
