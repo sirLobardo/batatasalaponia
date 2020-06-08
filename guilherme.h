@@ -12,60 +12,45 @@
 	  }		   
    }
  void marcar1(int lin, int col) {
- 	if(lin < 2 || col < 2 || lin > 11 || col > 11)
+ 	if(lin > 5 || col < 2 || col > 11 )
 	 {
-		 printf("Nao eh possivel marcar os soldados nos morros\n\n");		 	 
+		 printf("coordenadas invalidas\n\n");		 	 
 	 }
-	if(lin == 6 || lin == 7)
-		{
-		printf("Nao eh possivel marcar os soldados no rio\n\n");
-	} 
 	 else	 {
 		 mapa [lin][col] = '1';
 	 }	  
  }
  
  void marcar2(int lin, int col) {
- 	if(lin < 2 || col < 2 || lin > 11 || col > 11)
+ 	if(col < 2 || lin < 8 || col > 11)
 	 {
-		 printf("Nao eh possivel marcar os soldados nos morros\n\n");		 	 
-	 }
-	if(lin == 6 || lin == 7)
-		{
-		printf("Nao eh possivel marcar os soldados no rio\n\n");
-	} 
+		 printf("coordenadas invalidas\n\n");		 	 
+	 }	
 	 else	 {
 		 mapa [lin][col] = '2';
 	 }	  
  }
  
  void heroinorte(int lin, int col) {
- 	if(lin < 2 || col < 2 || lin > 11 || col > 11)
+ 	if(lin > 5 || col < 2 || col > 11 )
 	 {
-		 printf("Nao eh possivel marcar os soldados nos morros\n\n");		 	 
+		 printf("coordenadas invalidas\n\n");		 	 
 	 }
-	if(lin == 6 || lin == 7)
-		{
-		printf("Nao eh possivel marcar os soldados no rio\n\n");
-	} 
 	 else	 {
 		 mapa [lin][col] = '#';
 	 }	  
  }
  
  void heroisul(int lin, int col) {
- 	if(lin < 2 || col < 2 || lin > 11 || col > 11)
+ 	if(col < 2 || lin < 8 || col > 11)
 	 {
-		 printf("Nao eh possivel marcar os soldados nos morros\n\n");		 	 
-	 }
-	if(lin == 6 || lin == 7)
-		{
-		printf("Nao eh possivel marcar os soldados no rio\n\n");
-	} 
+		 printf("coordenadas invalidas\n\n");		 	 
+	 }	
 	 else	 {
 		 mapa [lin][col] = '@';
 	 }	  
  }
+
       void marcarsoldados()   {
 	 int i, j, cont;
 	 imprimirmapa();
