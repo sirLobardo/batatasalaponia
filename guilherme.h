@@ -22,6 +22,7 @@
 		 mapa [lin][col] = '1';
 	 }	  
  }
+      void marcarsoldados()   {
 	 int i, j, cont;
 	 imprimirmapa();
 	   for(cont = 1; cont <= 8; cont++)	   {
@@ -31,3 +32,4 @@
 		marcar1(i, j); 
     imprimirmapa();
     } 
+      }
