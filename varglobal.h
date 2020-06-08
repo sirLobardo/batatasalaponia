@@ -15,6 +15,9 @@ char mapa[13][13] = {
 
 };
 void marcar1(int lin, int col);
+void marcar2(int lin, int col);
+void heroinorte(int lin, int col);
+void heroisul(int lin, int col);
 int funcao();
 void imprimirmapa();
 void menu();
