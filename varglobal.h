@@ -20,3 +20,4 @@ void imprimirmapa();
 void menu();
 void comojogar();
 void regras();
+void marcarsoldados();
