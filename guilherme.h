@@ -11,8 +11,8 @@
 		  printf("\n");
 	  }		   
    }
- void marcar1(int lin, int col) {
- 	if(lin > 5 || col < 2 || col > 11 )
+  void marcar1(int lin, int col) {
+ 	if(lin < 2 || lin > 5 || col < 2 || col > 11 )
 	 {
 		 printf("coordenadas invalidas\n\n");		 	 
 	 }
@@ -22,7 +22,7 @@
  }
  
  void marcar2(int lin, int col) {
- 	if(col < 2 || lin < 8 || col > 11)
+ 	if(col < 2 || lin < 8 || col > 11 || lin > 11)
 	 {
 		 printf("coordenadas invalidas\n\n");		 	 
 	 }	
@@ -32,7 +32,7 @@
  }
  
  void heroinorte(int lin, int col) {
- 	if(lin > 5 || col < 2 || col > 11 )
+ 	if(lin < 2 || lin > 5 || col < 2 || col > 11 )
 	 {
 		 printf("coordenadas invalidas\n\n");		 	 
 	 }
@@ -42,7 +42,7 @@
  }
  
  void heroisul(int lin, int col) {
- 	if(col < 2 || lin < 8 || col > 11)
+ 	if(col < 2 || lin < 8 || col > 11 || lin > 11)
 	 {
 		 printf("coordenadas invalidas\n\n");		 	 
 	 }	
