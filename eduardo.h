@@ -14,9 +14,6 @@ int funcao()
     case 1:
 
         imprimirmapa();
-
-        printf("oi");
-
         system("pause");
         system("cls");
         funcao();
