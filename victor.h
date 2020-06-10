@@ -5,7 +5,6 @@
 
 
 
-
 void menu(){
 
 
@@ -42,15 +41,25 @@ system("cls");
 printf("REGRAS \n");
 printf("\n");
 printf("1 - O jogo consiste em um tabuleiro de tamanho 12x12, com as casas da borda representando a cordilheira e separado exatamente no meio por uma faixa de 20 casas, representando o grande lago \n ");
+system("pause");
 printf("2 - Os guerreiros 1 e 2 estão presentes em ambos os lados do rio, enquanto os guerreiros @ e # são exclusivos do norte e do sul, respectivamente \n"); 
+system("pause");
 printf("3 - Em cada jogada, o jogador deve decidir qual guerreiro usar e escolher se deve se movimentar ou atacar \n");
+system("pause");
 printf("4 - Os guerreiros 1 e 2 movem-se uma casa para a esquerda, para a direita, para frente ou para trás \n");
+system("pause");
 printf("5 - Os guerreiros @ e # podem se mover qualquer numero de casas nas diagonais e nos pontos cardiais, respectivamente  \n");
+system("pause");
 printf("6 - É proibido movimentar-se para uma casa do rio ou da cordilheira \n");
+system("pause");
 printf("7 - O guerreiro 1 pode apenas atacar frontalmente, enquanto o 2 precisa escolher qual diagonal (esquerda ou direita) atacar \n");
+system("pause");
 printf("8 - O guerreiro # pode escolher uma area 3x3 para atacar, dizimando qualquer peça no local \n");
-printf("9 - O guerreiro @ pode escolher um inimigo em qualquer lugar do mapa para matar \n");	
+system("pause");
+printf("9 - O guerreiro @ pode escolher um inimigo em qualquer lugar do mapa para matar \n");
+system("pause");	
 printf("10 - O jogador que exterminar todas as peças inimigas vence \n");
+system("pause");
 printf("\n");
 printf("aperte enter para voltar para o menu");
 } 
