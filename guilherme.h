@@ -77,4 +77,3 @@
           heroisul(i,j);
 	imprimirmapa();
     } 
-      }
