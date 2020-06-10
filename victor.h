@@ -60,6 +60,4 @@ printf("9 - O guerreiro @ pode escolher um inimigo em qualquer lugar do mapa par
 system("pause");	
 printf("10 - O jogador que exterminar todas as peças inimigas vence \n");
 system("pause");
-printf("\n");
-printf("aperte enter para voltar para o menu");
 } 
