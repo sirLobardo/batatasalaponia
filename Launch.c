@@ -10,6 +10,5 @@ int main()
 {
     setlocale(LC_ALL, "Portuguese");
     funcao();
-    system("pause");
     return 0;
 }
