@@ -51,6 +51,22 @@
 	 }	  
  }
 
+void nomejogador1(){
+	 int tamanho;
+	char nome1[100];
+	printf("Digite o seu Nome: ");
+	fgets(nome1,100,stdin);
+	tamanho = strlen(nome1);	 
+ }
+    
+	 void nomejogador2(){
+	 int tamanho;
+	char nome2[100];
+	printf("Digite o seu Nome: ");
+	fgets(nome2,100,stdin);
+	tamanho = strlen(nome2);	 
+ }
+
       void marcarsoldados()   {
 	 int i, j, cont;
 	 imprimirmapa();
