@@ -83,28 +83,64 @@ void nomejogador2()
 void marcarsoldados()
 {
 	int i, j, cont;
-	imprimirmapa();
-	for (cont = 1; cont <= 7; cont++)
-	{
-		printf("Digite a linha e a coluna que deseja posicionar o soldado 1 : ");
-		scanf("%d %d", &i, &j);
-		system("cls");
-		marcar1(i, j);
-		imprimirmapa();
-		printf("Digite a linha e a coluna que deseja posicionar o soldado 2 : ");
-		scanf("%d %d", &i, &j);
-		system("cls");
-		marcar2(i, j);
-		imprimirmapa();
-	}
-	printf("Digite a localização do soldado especial do norte: ");
-	scanf("%d %d", &i, &j);
-	system("cls");
-	heroinorte(i, j);
-	imprimirmapa();
-	printf("Digite a localização do soldado especial do sul: ");
-	scanf("%d %d", &i, &j);
-	system("cls");
-	heroisul(i, j);
-	imprimirmapa();
+	 imprimirmapa();
+	   for(cont = 1; cont <= 7; cont++)	  
+	    {
+	   	for(;;)		   
+		   {
+	   	 printf("Digite a linha e a coluna que deseja posicionar o soldado 1 : ");
+	       scanf("%d %d", &i, &j);
+        	 if(i > 1 && j > 1 && i < 6 && j < 12)	 
+		  {	
+	          system("cls");	   
+		       marcar1(i, j); 
+              imprimirmapa();
+               break;
+	      } 
+	      system("cls");
+	      imprimirmapa();
+	      printf("coordenadas invalidas\n");
+		   }
+		  for(;;)		 
+		  { 
+          printf("Digite a linha e a coluna que deseja posicionar o soldado 2 : ");
+          scanf("%d %d", &i, &j);
+          if(j > 1 && i > 7 && j < 12 && i < 12)    
+		  {
+	       system("cls");
+           marcar2(i, j);
+           imprimirmapa();
+           break;
+		  }
+		  system("cls");
+	      imprimirmapa();
+	      printf("coordenadas invalidas\n");
+          } 
+	      }
+         for(;;)		  {
+	      	 printf("Digite a localização do soldado especial do norte: ");
+	         scanf("%d %d", &i, &j);
+            	 if(i > 1 && j > 1 && i < 6 && j < 12)	 {	
+	              system("cls");	   
+		          heroinorte(i, j); 
+                  imprimirmapa();
+                  break;
+	      } 
+	      system("cls");
+	      imprimirmapa();
+	      printf("coordenadas invalidas\n");
+		   }	   
+	   for(;;)		 { 
+          printf("Digite a localização do soldado especial do sul: ");
+          scanf("%d %d", &i, &j);
+          if(j > 1 && i > 7 && j < 12 && i < 12)    {
+	        system("cls");
+            heroisul(i, j);
+            imprimirmapa();
+            break;
+		  }
+		   system("cls");
+	       imprimirmapa();
+	       printf("coordenadas invalidas\n");
+    } 
 }
