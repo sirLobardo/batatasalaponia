@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <conio.h> 
+#include <time.h> 
 
 void imprimirmapa()
 {
@@ -62,23 +65,29 @@ void heroisul(int lin, int col)
 	}
 }
 
-void nomejogador1()
-{
-	int tamanho;
-	char nome1[100];
-	printf("Digite o seu Nome: ");
-	fgets(nome1, 100, stdin);
-	tamanho = strlen(nome1);
-}
-
-void nomejogador2()
-{
-	int tamanho;
-	char nome2[100];
-	printf("Digite o seu Nome: ");
-	fgets(nome2, 100, stdin);
-	tamanho = strlen(nome2);
-}
+void random() {
+      int tamanho;
+      char nome1[100], nome2[100];
+      printf("Digite o nome do player1: ");
+      fgets(nome1, 100, stdin);
+      tamanho = strlen(nome1); 
+  
+      printf("Digite o nome do player2: ");
+      fgets(nome2, 100, stdin);
+      tamanho = strlen(nome2);
+      srand(time(NULL));
+  
+  {
+   if(rand() % 11 >= 6)
+	  {
+		  printf("\nQuem comeca eh o(a) jogador(a) %s\n", nome1);
+	  }
+   else
+   {
+	  printf("\nQuem comeca eh o(a) jogador(a) %s\n", nome2); 
+   }  
+  }  		
+	}
 
 void marcarsoldados()
 {
