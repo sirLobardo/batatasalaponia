@@ -26,3 +26,4 @@ void menu();
 void comojogar();
 void regras();
 void marcarsoldados();
+void random();
