@@ -12,7 +12,7 @@ void imprimirmapa()
 	{
 		for (col = 0; col < 14; col++)
 		{
-			printf("%c", mapa[lin][col]);
+			printf("%3c", mapa[lin][col]);
 		}
 		printf("\n");
 	}
