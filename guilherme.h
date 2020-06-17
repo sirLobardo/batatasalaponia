@@ -6,11 +6,11 @@
 
 void imprimirmapa()
 {
-	mapa[13][13];
+	mapa[14][14];
 	int lin, col;
-	for (lin = 0; lin < 13; lin++)
+	for (lin = 0; lin < 14; lin++)
 	{
-		for (col = 0; col < 13; col++)
+		for (col = 0; col < 14; col++)
 		{
 			printf("%c", mapa[lin][col]);
 		}
