@@ -65,6 +65,22 @@ void heroisul(int lin, int col)
 	}
 }
 
+        void nomejogador1(){
+	 int tamanho;
+	char nome1[100];	
+	fgets(nome1,100,stdin);
+	tamanho = strlen(nome1);
+	printf("Eh a vez do(a) jogador(a): %s", nome1);	 
+ }
+    
+	 void nomejogador2(){
+	 int tamanho;
+	char nome2[100];
+	fgets(nome2,100,stdin);
+	tamanho = strlen(nome2);	
+	printf("Eh a vez do(a) jogador(a): %s", nome2); 
+	 }
+
 void random() {
       int tamanho;
       char nome1[100], nome2[100];
