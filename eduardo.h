@@ -12,12 +12,12 @@ int funcao()
     switch (escolha)
     {
     case 1:
-
+        system("cls");
         random();
         system("pause");
         system("cls");
         imprimirmapa();
-        system("pause");
+        marcarsoldados();
         break;
     case 2:
         system("cls");
