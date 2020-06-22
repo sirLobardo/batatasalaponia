@@ -112,7 +112,7 @@ void marcarsoldados()
 	 getchar();
 	 system("cls");
 	 imprimirmapa();
-	   for(cont = 1; cont <= 7; cont++)	  
+	   for(cont = 1; cont <= 8; cont++)	  
 	    {
 	   	for(;;)		   
 		   {
