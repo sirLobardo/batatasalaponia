@@ -111,8 +111,6 @@ void random()
 void marcarsoldados()
 {
 	int i, j, cont, soldado;
-	random();
-	system("pause");
 	system("cls");
 	imprimirmapa();
 	for (cont = 1; cont <= 8; cont++)
