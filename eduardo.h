@@ -13,7 +13,7 @@ int funcao()
     {
     case 1:
 
-        imprimirmapa();
+        random();
         system("pause");
         system("cls");
         funcao();

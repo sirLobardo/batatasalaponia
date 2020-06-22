@@ -88,11 +88,11 @@ void random()
 	int tamanho;
 	char nome1[100], nome2[100];
 	printf("Digite o nome do player1: ");
-	fgets(nome1, 100, stdin);
+	scanf("%s", &nome1);
 	tamanho = strlen(nome1);
 
 	printf("Digite o nome do player2: ");
-	fgets(nome2, 100, stdin);
+	scanf("%s", &nome2);
 	tamanho = strlen(nome2);
 	srand(time(NULL));
 
