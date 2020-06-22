@@ -111,108 +111,114 @@ void random()
 void marcarsoldados()
 {
 	int i, j, cont, soldado;
-	system("cls");
-	imprimirmapa();
-	for (cont = 1; cont <= 8; cont++)
-	{
-		for (;;)
-		{
-			printf("Digite o tipo de soldado e a linha e a coluna que deseja posicionar o soldado 1: ");
-			scanf("%d %d %d", &soldado, &i, &j);
-			if (i > 1 && j > 1 && i < 6 && j < 12)
-			{
-
-				if (soldado == 1)
-				{
-					system("cls");
-					marcar1(i, j);
-					imprimirmapa();
-					break;
-				}
-				else if (soldado == 2)
-				{
-					system("cls");
-					marcar2(i, j);
-					imprimirmapa();
-					break;
-				}
-				else if (soldado != 1 || soldado != 2)
-				{
-					system("cls");
-					imprimirmapa();
-					printf("So eh possivel marcar soldado do tipo 1 ou 2\n\n");
-				}
-			}
-			else
-			{
-				system("cls");
-				imprimirmapa();
-				printf("coordenadas invalidas\n");
-			}
-		}
-		for (;;)
-		{
-			printf("Digite o tipo de soldado e a linha e a coluna que deseja posicionar o soldado 2: ");
-			scanf("%d %d %d", &soldado, &i, &j);
-			if (j > 1 && i > 7 && j < 12 && i < 12)
-			{
-				if (soldado == 1)
-				{
-					system("cls");
-					marcar1(i, j);
-					imprimirmapa();
-					break;
-				}
-				else if (soldado == 2)
-				{
-					system("cls");
-					marcar2(i, j);
-					imprimirmapa();
-					break;
-				}
-				else if (soldado != 1 || soldado != 2)
-				{
-					system("cls");
-					imprimirmapa();
-					printf("So eh possivel marcar soldado do tipo 1 ou 2\n\n");
-				}
-			}
-			else
-			{
-				system("cls");
-				imprimirmapa();
-				printf("coordenadas invalidas\n");
-			}
-		}
-	}
-	for (;;)
-	{
-		printf("Digite a localização do soldado especial do norte: ");
-		scanf("%d %d", &i, &j);
-		if (i > 1 && j > 1 && i < 6 && j < 12)
-		{
-			system("cls");
-			heroinorte(i, j);
-			imprimirmapa();
-			break;
-		}
-		system("cls");
-		imprimirmapa();
-		printf("coordenadas invalidas\n");
-	}
-	for (;;)
-	{
-		printf("Digite a localização do soldado especial do sul: ");
-		scanf("%d %d", &i, &j);
-		if (j > 1 && i > 7 && j < 12 && i < 12)
-		{
-			system("cls");
-			heroisul(i, j);
-			imprimirmapa();
-			break;
-		}
-		system("cls");
-		imprimirmapa();
-		printf("coordenadas invalidas\n");
-	}
-}
+	 printf("\n\n");
+	 imprimirmapa();
+	   for(cont = 1; cont <= 8; cont++)	  
+	    {
+	   	for(;;)		   
+		   {
+	   	 printf("Digite o tipo de soldado e a linha e a coluna que deseja posicionar o soldado no norte: ");
+	       scanf("%d %d %d",&soldado, &i, &j);
+        	 if(i > 1 && j > 1 && i < 6 && j < 12)	 
+		  {	
+  		        
+				  if(soldado == 1)
+				  {
+					  system("cls");	   
+		              marcar1(i, j); 
+		              printf("\n\n");
+                      imprimirmapa();
+                      break;        
+				  }
+				  else if(soldado == 2)
+				  {
+					  system("cls");	   
+		              marcar2(i, j);
+					  printf("\n\n"); 
+                      imprimirmapa();
+                         break;      
+				  }	
+				 else if(soldado != 1 || soldado != 2)
+			   {
+				   system("cls");
+				   printf("\n\n");
+	               imprimirmapa();          
+	               printf("So eh possivel marcar soldado do tipo 1 ou 2\n\n");
+	               
+			   }
+			  			  	
+			  
+	      } 
+		      else
+		  {
+	      system("cls");
+	      printf("\ncoordenadas invalidas\n\n");
+	      imprimirmapa();
+		  }
+		   }
+		  for(;;)		 
+		  { 
+          printf("Digite o tipo de soldado e a linha e a coluna que deseja posicionar o soldado no sul: ");
+          scanf("%d %d %d",&soldado, &i, &j);
+          if(j > 1 && i > 7 && j < 12 && i < 12)    
+		  {
+	       if(soldado == 1)
+				  {
+					  system("cls");	   
+		              marcar1(i, j);
+					  printf("\n\n"); 
+                      imprimirmapa();
+                      break;        
+				  }
+				  else if(soldado == 2)
+				  {
+					  system("cls");	   
+		              marcar2(i, j); 
+		              printf("\n\n");
+                      imprimirmapa();
+                         break;      
+				  }	
+				 else if(soldado != 1 || soldado != 2)
+			   {
+				   system("cls");
+				   printf("\n\n");
+	               imprimirmapa();
+	               printf("So eh possivel marcar soldado do tipo 1 ou 2\n\n");
+			   }
+	      } 
+	      else
+		  {
+	      system("cls");
+	      printf("\ncoordenadas invalidas\n\n");
+	      imprimirmapa();
+		  }
+          } 
+	      }
+         for(;;)		  {
+	      	 printf("Digite a localização do soldado especial do norte: ");
+	         scanf("%d %d", &i, &j);
+            	 if(i > 1 && j > 1 && i < 6 && j < 12)	 {	
+	              system("cls");	   
+		          heroinorte(i, j); 
+		          printf("\n\n");
+                  imprimirmapa();
+                  break;
+	      } 
+	      system("cls");
+	      printf("\ncoordenadas invalidas\n\n");
+	      imprimirmapa();
+		   }	   
+	   for(;;)		 { 
+          printf("Digite a localização do soldado especial do sul: ");
+          scanf("%d %d", &i, &j);
+          if(j > 1 && i > 7 && j < 12 && i < 12)    {
+	        system("cls");
+            heroisul(i, j);
+            printf("\ncoordenadas invalidas\n\n");
+            imprimirmapa();
+            break;
+		  }
+		   system("cls");
+		   printf("\ncoordenadas invalidas\n\n");
+	       imprimirmapa();
+    } 
