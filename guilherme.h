@@ -69,7 +69,7 @@ void nomejogador1()
 {
 	int tamanho;
 	char nome1[100];
-	fgets(nome1, 100, stdin);
+	scanf("%s", &nome1);
 	tamanho = strlen(nome1);
 	printf("Eh a vez do(a) jogador(a): %s", nome1);
 }
@@ -78,7 +78,7 @@ void nomejogador2()
 {
 	int tamanho;
 	char nome2[100];
-	fgets(nome2, 100, stdin);
+	scanf("%s", &nome2);
 	tamanho = strlen(nome2);
 	printf("Eh a vez do(a) jogador(a): %s", nome2);
 }

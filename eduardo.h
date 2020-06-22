@@ -16,7 +16,8 @@ int funcao()
         random();
         system("pause");
         system("cls");
-        funcao();
+        imprimirmapa();
+        system("pause");
         break;
     case 2:
         system("cls");
