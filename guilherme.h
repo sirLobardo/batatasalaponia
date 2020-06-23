@@ -1,116 +1,119 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <conio.h>
-#include <time.h>
+#include <time.h>  
 
-void imprimirmapa()
-{
-	mapa[14][14];
-	int lin, col;
-	for (lin = 0; lin < 14; lin++)
-	{
-		for (col = 0; col < 14; col++)
-		{
-			printf("%3c", mapa[lin][col]);
-		}
-		printf("\n");
-	}
-}
-void marcar1(int lin, int col)
-{
-	if (lin < 2 || lin > 5 || col < 2 || col > 11)
-	{
-		printf("coordenadas invalidas\n\n");
-	}
-	else
-	{
-		mapa[lin][col] = '1';
-	}
-}
+    
+    
+    
+ int mapa[14][14]= {
+    {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', '\n'},
+    {'1', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '\n'},
+    {'2', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', '\n'},
+    {'3', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', '\n'},
+    {'4', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', '\n'},
+    {'5', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', '\n'},
+    {'6', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '\n'},
+    {'7', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '~', '\n'},
+    {'8', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', '\n'},
+    {'9', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', '\n'},
+    {'a', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', '\n'},
+    {'b', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', '\n'},
+    {'c', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '\n'}
+};
 
-void marcar2(int lin, int col)
-{
-	if (col < 2 || lin < 8 || col > 11 || lin > 11)
-	{
-		printf("coordenadas invalidas\n\n");
-	}
-	else
-	{
-		mapa[lin][col] = '2';
-	}
-}
 
-void heroinorte(int lin, int col)
-{
-	if (lin < 2 || lin > 5 || col < 2 || col > 11)
-	{
-		printf("coordenadas invalidas\n\n");
-	}
-	else
-	{
-		mapa[lin][col] = '#';
-	}
-}
+  void imprimirmapa(){
+	   int lin, col;
+	 	 for(lin = 0; lin < 14; lin++)	  {
+		  for(col = 0; col < 14; col++)		  {
+             printf("%3c", mapa[lin][col]);			  			  
+		  }
+		  printf("\n");
+	  }		   
+   }
+ void marcar1(int lin, int col) {	
+ 	if(col < 2 || lin < 2 || col > 11 || lin > 11)
+	 {
+		 printf("\n\n");
+	 }
+	 else	 {
+		 mapa [lin][col] = '1';
+	 }	  
+ }
+ 
+ void marcar2(int lin, int col) {
+ 	if(col < 2 || lin < 2 || col > 11 || lin > 11)
+	 {
+		 printf("\n\n");		 	 
+	 }	
+	 else	 {
+		 mapa [lin][col] = '2';
+	 }	  
+ }
+ 
+ void heroinorte(int lin, int col) {
+ 	if(lin < 2 || lin > 5 || col < 2 || col > 11 )
+	 {
+		 printf("\n\n");		 	 
+	 }
+	 else	 {
+		 mapa [lin][col] = '#';
+	 }	  
+ }
+ 
+ void heroisul(int lin, int col) {
+ 	if(col < 2 || lin < 8 || col > 11 || lin > 11)
+	 {
+		 printf("\n\n");		 	 
+	 }	
+	 else	 {
+		 mapa [lin][col] = '@';
+	 }	  
+ }
 
-void heroisul(int lin, int col)
-{
-	if (col < 2 || lin < 8 || col > 11 || lin > 11)
-	{
-		printf("coordenadas invalidas\n\n");
-	}
-	else
-	{
-		mapa[lin][col] = '@';
-	}
-}
-
-void nomejogador1()
-{
-	int tamanho;
+  void nomejogador1(){
+	 int tamanho;
 	char nome1[100];
-	scanf("%s", &nome1);
-	tamanho = strlen(nome1);
-	printf("Eh a vez do(a) jogador(a): %s", nome1);
-}
-
-void nomejogador2()
-{
-	int tamanho;
+	printf("Digite o seu Nome: ");
+	fgets(nome1,100,stdin);
+	tamanho = strlen(nome1);	 
+ }
+    
+	 void nomejogador2(){
+	 int tamanho;
 	char nome2[100];
-	scanf("%s", &nome2);
-	tamanho = strlen(nome2);
-	printf("Eh a vez do(a) jogador(a): %s", nome2);
-}
-
-void random()
-{
-	int tamanho;
-	char nome1[100], nome2[100];
-	printf("Digite o nome do player1: ");
-	scanf("%s", &nome1);
-	tamanho = strlen(nome1);
-
-	printf("Digite o nome do player2: ");
-	scanf("%s", &nome2);
-	tamanho = strlen(nome2);
-	srand(time(NULL));
-
-	{
-		if (rand() % 11 >= 6)
-		{
-			printf("\nQuem comeca eh o(a) jogador(a) %s\n", nome1);
-		}
-		else
-		{
-			printf("\nQuem comeca eh o(a) jogador(a) %s\n", nome2);
-		}
+	printf("Digite o seu Nome: ");
+	fgets(nome2,100,stdin);
+	tamanho = strlen(nome2);	 
+ }
+ 
+    void random() {
+      int tamanho;
+      char nome1[100], nome2[100];
+      printf("Digite o nome do player1: ");
+      fgets(nome1, 100, stdin);
+      tamanho = strlen(nome1); 
+      
+      printf("Digite o nome do player2: ");
+      fgets(nome2, 100, stdin);
+      tamanho = strlen(nome2);
+      srand(time(NULL));
+  
+  {
+   if(rand() % 11 >= 6)
+	  {
+		  printf("\nQuem comeca eh o(a) jogador(a) %s\n", nome1);
+	  }
+   else
+   {
+	  printf("\nQuem comeca eh o(a) jogador(a) %s\n", nome2); 
+   }  
+  }  		
 	}
-}
-
-void marcarsoldados()
-{
-	int i, j, cont, soldado;
+ 
+ void marcarsoldados() {
+	 int i, j, cont, soldado;
 	 printf("\n\n");
 	 imprimirmapa();
 	   for(cont = 1; cont <= 8; cont++)	  
@@ -189,6 +192,7 @@ void marcarsoldados()
 	      else
 		  {
 	      system("cls");
+	      printf("\n\n");
 	      printf("\ncoordenadas invalidas\n\n");
 	      imprimirmapa();
 		  }
