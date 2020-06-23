@@ -3,7 +3,7 @@
 #include <string.h>
 #include <time.h>
 
-char nome1[100], jogador2[100];
+char nome1[100], nome2[100];
 void imprimirmapa()
 {
 	int lin, col;
@@ -84,15 +84,12 @@ void nomejogador2()
 */
 char random()
 {
-	int tamanho;
-	char nome1[100], nome2[100];
 	printf("Digite o nome do player1: ");
 	scanf("%s", &nome1);
-	tamanho = strlen(nome1);
 
 	printf("Digite o nome do player2: ");
 	scanf("%s", &nome2);
-	tamanho = strlen(nome2);
+
 	srand(time(NULL));
 
 	{
@@ -105,14 +102,13 @@ char random()
 			printf("\nQuem comeca eh o(a) jogador(a) %s\n", nome2);
 		}
 	}
-	return nome1;
 }
 
 void marcarsoldados()
 {
 	int i, j, cont, soldado;
 	printf("\n\n");
-	printf("O jogador %s", nome1);
+	printf("A vez de %s\n", nome1);
 	for (cont = 1; cont <= 8; cont++)
 	{
 		for (;;)
@@ -129,7 +125,7 @@ void marcarsoldados()
 					marcar1(i, j);
 					printf("\n\n");
 					imprimirmapa();
-					printf("O jogador %s", nome1);
+					printf("A vez é de %s\n", nome1);
 					break;
 				}
 				else if (soldado == 2)
@@ -138,7 +134,7 @@ void marcarsoldados()
 					marcar2(i, j);
 					printf("\n\n");
 					imprimirmapa();
-					printf("O jogador %s", nome1);
+					printf("A vez é de %s\n", nome2);
 					break;
 				}
 				else if (soldado != 1 || soldado != 2)
