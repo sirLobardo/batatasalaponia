@@ -104,7 +104,7 @@ int mapa[14][14]= {
   }  		
 	}
  
- void mapa() {
+ void marcarsoldados() {
 	 int i, j, cont, soldado;
 	 printf("\n\n");
 	 imprimirmapa();
