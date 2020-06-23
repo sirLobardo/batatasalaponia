@@ -3,6 +3,7 @@
 #include <string.h>
 #include <time.h>
 
+char nome1[100], jogador2[100];
 void imprimirmapa()
 {
 	int lin, col;
@@ -62,7 +63,7 @@ void heroisul(int lin, int col)
 		mapa[lin][col] = '@';
 	}
 }
-
+/*
 void nomejogador1()
 {
 	int tamanho;
@@ -80,8 +81,8 @@ void nomejogador2()
 	fgets(nome2, 100, stdin);
 	tamanho = strlen(nome2);
 }
-
-void random()
+*/
+char random()
 {
 	int tamanho;
 	char nome1[100], nome2[100];
@@ -104,16 +105,19 @@ void random()
 			printf("\nQuem comeca eh o(a) jogador(a) %s\n", nome2);
 		}
 	}
+	return nome1;
 }
 
 void marcarsoldados()
 {
 	int i, j, cont, soldado;
 	printf("\n\n");
+	printf("O jogador %s", nome1);
 	for (cont = 1; cont <= 8; cont++)
 	{
 		for (;;)
 		{
+
 			printf("Digite o tipo de soldado e a linha e a coluna que deseja posicionar o soldado no norte: ");
 			scanf("%d %d %d", &soldado, &i, &j);
 			if (i > 1 && j > 1 && i < 6 && j < 12)
@@ -125,6 +129,7 @@ void marcarsoldados()
 					marcar1(i, j);
 					printf("\n\n");
 					imprimirmapa();
+					printf("O jogador %s", nome1);
 					break;
 				}
 				else if (soldado == 2)
@@ -133,6 +138,7 @@ void marcarsoldados()
 					marcar2(i, j);
 					printf("\n\n");
 					imprimirmapa();
+					printf("O jogador %s", nome1);
 					break;
 				}
 				else if (soldado != 1 || soldado != 2)
