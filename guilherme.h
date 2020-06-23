@@ -1,12 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>  
-
-    
-    
-    
- int mapa[14][14]= {
+int mapa[14][14]= {
     {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', '\n'},
     {'1', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '\n'},
     {'2', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', '\n'},
@@ -112,7 +104,7 @@
   }  		
 	}
  
- void marcarsoldados() {
+ void mapa() {
 	 int i, j, cont, soldado;
 	 printf("\n\n");
 	 imprimirmapa();
