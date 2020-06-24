@@ -18,6 +18,12 @@ int funcao()
         system("cls");
         imprimirmapa();
         marcarsoldados();
+        movimento1();
+        system("cls");
+        imprimirmapa();
+        ataque();
+        //system("cls");
+        imprimirmapa();
         break;
     case 2:
         system("cls");
