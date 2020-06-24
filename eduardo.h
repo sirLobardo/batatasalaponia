@@ -21,7 +21,7 @@ int funcao()
         movimento1();
         system("cls");
         imprimirmapa();
-        ataque();
+        ataque1();
         //system("cls");
         imprimirmapa();
         break;
