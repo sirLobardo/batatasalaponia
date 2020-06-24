@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-
 int funcao()
 {
     int escolha;
@@ -12,18 +9,7 @@ int funcao()
     switch (escolha)
     {
     case 1:
-        system("cls");
-        random();
-        system("pause");
-        system("cls");
-        imprimirmapa();
-        marcarsoldados();
-        movimento1();
-        system("cls");
-        imprimirmapa();
-        ataque1();
-        //system("cls");
-        imprimirmapa();
+        jogar();
         break;
     case 2:
         system("cls");
