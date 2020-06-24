@@ -27,4 +27,4 @@ void marcarsoldados();
 char random();
 void movimento1();
 void ataque1();
-void ataque2()
+void ataque2();
