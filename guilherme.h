@@ -72,7 +72,6 @@ void nomejogador1()
 	fgets(nome1, 100, stdin);
 	tamanho = strlen(nome1);
 }
-
 void nomejogador2()
 {
 	int tamanho;
@@ -109,7 +108,7 @@ void marcarsoldados()
 	int i, j, cont, soldado;
 	printf("\n\n");
 	printf("A vez de %s\n", nome1);
-	for (cont = 1; cont <= 8; cont++)
+	for (cont = 1; cont <= 1; cont++)
 	{
 		for (;;)
 		{
