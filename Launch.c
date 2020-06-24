@@ -1,14 +1,14 @@
-  
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <time.h>
 #include "varglobal.h"
 #include "guilherme.h"
 #include "heitor.h"
 #include "jogete.h"
 #include "eduardo.h"
 #include "victor.h"
-
 
 int main()
 

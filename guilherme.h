@@ -1,8 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-
 char nome1[100], nome2[100];
 void imprimirmapa()
 {
