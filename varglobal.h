@@ -16,8 +16,8 @@ void marcar1(int lin, int col);
 void marcar2(int lin, int col);
 void heroinorte(int lin, int col);
 void heroisul(int lin, int col);
-void nomejogador1();
-void nomejogador2();
+//void nomejogador1();
+//void nomejogador2();
 int funcao();
 void imprimirmapa();
 void menu();
@@ -25,3 +25,6 @@ void comojogar();
 void regras();
 void marcarsoldados();
 char random();
+void movimento1();
+void ataque1();
+void ataque2()
