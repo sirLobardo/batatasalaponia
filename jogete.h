@@ -35,7 +35,7 @@ void atkmovs()
 {
 	char x;
 	printf("Vez do sul\n");
-	printf("Ataque = (a)\nMovimento = (m)\nEspecial = (s): ");
+	printf("Ataque = (a)\nMovimento = (m)\nEspecial = (s)\nMovimento especial = (g): ");
 	 scanf(" %c", &x);
         	if(x == 'a'|| x == 'A')
 			{
@@ -45,6 +45,10 @@ void atkmovs()
 			else if( x == 'm'|| x == 'M')
 			{
 				movimento2();
+			}
+			else if( x == 'g'|| x == 'G')
+			{
+				movespsul();
 			}
 			else if(x == 's' || x == 'S'){
 				atkesps();
@@ -69,23 +73,18 @@ void jogar(){
         system("cls");
         imprimirmapa();
         marcarsoldados();
-        if(testen != 3 || testes != 3){
-        for(;;){
-        	atkmovn();
-			break;	
-		}
-		for(;;){
-			atkmovs();
-			break;	
-		}
-			
-	}
-     if(testes == 3){
+        if(testes == 3){
 			printf("O VENCEDOR É O NORTE!!!");
 		}
 		else if(testen == 3){
 			printf("O VENCEDOR É O SUL!!!");
-		}   
+		}
+        while(testen != 3 || testes != 3){
+        	atkmovn();
+			atkmovs();
+		}
+		
+        
 	
 }
 
