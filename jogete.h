@@ -1,19 +1,32 @@
+int testen = 0,  testes = 0;
+
 void atkmovn()
 {
 	char x;
-	printf("(m)movimento (a)ataque: ");
+	printf("Vez do norte\n");
+	printf("Ataque = (a)\nMovimento = (m)\nEspecial = (s)\nMovimento especial = (g): ");
 	 scanf(" %c", &x);
         	if(x == 'a'|| x == 'A')
 			{
-        		ataque();					
+        		ataque();
+				testen++;					
 			}
 			else if( x == 'm'|| x == 'M')
 			{
 				movimento1();
 			}
+			else if( x == 'g'|| x == 'G')
+			{
+				movespno();
+			}
+			else if(x == 's' || x == 'S'){
+				atkespn();
+				testen++;
+			}
+			
 			else
 			{
-				printf("seleção invalida");
+				printf("seleÃ§Ã£o invalida");
 				system("pause");
 				atkmovn();
 			}
@@ -21,26 +34,34 @@ void atkmovn()
 void atkmovs()
 {
 	char x;
-	printf("(m)movimento (a)ataque: ");
+	printf("Vez do sul\n");
+	printf("Ataque = (a)\nMovimento = (m)\nEspecial = (s): ");
 	 scanf(" %c", &x);
         	if(x == 'a'|| x == 'A')
 			{
-        		ataque();					
+        		ataque();
+				testes++;					
 			}
 			else if( x == 'm'|| x == 'M')
 			{
 				movimento2();
 			}
+			else if(x == 's' || x == 'S'){
+				atkesps();
+				testes++;
+			}
 			else
 			{
-				printf("seleção invalida");
+				printf("seleÃ§Ã£o invalida");
 				system("pause");
 				atkmovs();
 			}
 }
 
+
 void jogar(){
 	
+	int vitn, vits;
 	
 	system("cls");
         random();
@@ -48,12 +69,23 @@ void jogar(){
         system("cls");
         imprimirmapa();
         marcarsoldados();
-    	atkmovn();   
-        system("cls");
-        imprimirmapa();
-        //system("cls");
-        //imprimirmapa();
+        if(testen != 3 || testes != 3){
+        for(;;){
+        	atkmovn();
+			break;	
+		}
+		for(;;){
+			atkmovs();
+			break;	
+		}
+			
+	}
+     if(testes == 3){
+			printf("O VENCEDOR Ã‰ O NORTE!!!");
+		}
+		else if(testen == 3){
+			printf("O VENCEDOR Ã‰ O SUL!!!");
+		}   
 	
 }
-
 
