@@ -147,8 +147,8 @@ void marcarsoldados()
 			else
 			{
 				system("cls");
-				printf("\ncoordenadas invalidas\n\n");
 				imprimirmapa();
+				printf("\ncoordenadas invalidas\n\n");
 			}
 		}
 		for (;;)
@@ -185,8 +185,8 @@ void marcarsoldados()
 			{
 				system("cls");
 				printf("\n\n");
-				printf("\ncoordenadas invalidas\n\n");
 				imprimirmapa();
+				printf("\ncoordenadas invalidas\n\n");
 			}
 		}
 	}
@@ -203,8 +203,8 @@ void marcarsoldados()
 			break;
 		}
 		system("cls");
-		printf("\ncoordenadas invalidas\n\n");
 		imprimirmapa();
+		printf("\ncoordenadas invalidas\n\n");
 	}
 	for (;;)
 	{
@@ -214,12 +214,11 @@ void marcarsoldados()
 		{
 			system("cls");
 			heroisul(i, j);
-			//printf("\ncoordenadas invalidas\n\n");
 			imprimirmapa();
 			break;
 		}
 		system("cls");
-		printf("\ncoordenadas invalidas\n\n");
 		imprimirmapa();
+		printf("\ncoordenadas invalidas\n\n");
 	}
 }
