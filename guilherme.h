@@ -87,7 +87,7 @@ char random()
 	scanf("%s", &nome1);
 
 	printf("Digite o nome do player2: ");
-	scanf("%s", &nome2);
+	scanf(" %s", &nome2);
 
 	srand(time(NULL));
 
@@ -108,13 +108,13 @@ void marcarsoldados()
 	int i, j, cont, soldado;
 	printf("\n\n");
 	printf("A vez de %s\n", nome1);
-	for (cont = 1; cont <= 2; cont++)
+	for (cont = 1; cont <= 8; cont++)
 	{
 		for (;;)
 		{
 
 			printf("Digite o tipo de soldado e a linha e a coluna que deseja posicionar o soldado no norte: ");
-			scanf("%d %d %d", &soldado, &i, &j);
+			scanf(" %d %d %d", &soldado, &i, &j);
 			if (i > 1 && j > 1 && i < 6 && j < 12)
 			{
 
@@ -147,14 +147,14 @@ void marcarsoldados()
 			else
 			{
 				system("cls");
-				imprimirmapa();
 				printf("\ncoordenadas invalidas\n\n");
+				imprimirmapa();
 			}
 		}
 		for (;;)
 		{
 			printf("Digite o tipo de soldado e a linha e a coluna que deseja posicionar o soldado no sul: ");
-			scanf("%d %d %d", &soldado, &i, &j);
+			scanf(" %d %d %d", &soldado, &i, &j);
 			if (j > 1 && i > 7 && j < 12 && i < 12)
 			{
 				if (soldado == 1)
@@ -185,15 +185,15 @@ void marcarsoldados()
 			{
 				system("cls");
 				printf("\n\n");
-				imprimirmapa();
 				printf("\ncoordenadas invalidas\n\n");
+				imprimirmapa();
 			}
 		}
 	}
 	for (;;)
 	{
 		printf("Digite a localização do soldado especial do norte: ");
-		scanf("%d %d", &i, &j);
+		scanf(" %d %d", &i, &j);
 		if (i > 1 && j > 1 && i < 6 && j < 12)
 		{
 			system("cls");
@@ -203,22 +203,23 @@ void marcarsoldados()
 			break;
 		}
 		system("cls");
-		imprimirmapa();
 		printf("\ncoordenadas invalidas\n\n");
+		imprimirmapa();
 	}
 	for (;;)
 	{
 		printf("Digite a localização do soldado especial do sul: ");
-		scanf("%d %d", &i, &j);
+		scanf(" %d %d", &i, &j);
 		if (j > 1 && i > 7 && j < 12 && i < 12)
 		{
 			system("cls");
 			heroisul(i, j);
+			//printf("\ncoordenadas invalidas\n\n");
 			imprimirmapa();
 			break;
 		}
 		system("cls");
-		imprimirmapa();
 		printf("\ncoordenadas invalidas\n\n");
+		imprimirmapa();
 	}
 }
