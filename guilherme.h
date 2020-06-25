@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
 char nome1[100], nome2[100];
 void imprimirmapa()
 {
@@ -103,7 +108,7 @@ void marcarsoldados()
 	int i, j, cont, soldado;
 	printf("\n\n");
 	printf("A vez de %s\n", nome1);
-	for (cont = 1; cont <= 1; cont++)
+	for (cont = 1; cont <= 2; cont++)
 	{
 		for (;;)
 		{
@@ -142,8 +147,8 @@ void marcarsoldados()
 			else
 			{
 				system("cls");
-				imprimirmapa();
 				printf("\ncoordenadas invalidas\n\n");
+				imprimirmapa();
 			}
 		}
 		for (;;)
@@ -180,8 +185,8 @@ void marcarsoldados()
 			{
 				system("cls");
 				printf("\n\n");
-				imprimirmapa();
 				printf("\ncoordenadas invalidas\n\n");
+				imprimirmapa();
 			}
 		}
 	}
@@ -198,8 +203,8 @@ void marcarsoldados()
 			break;
 		}
 		system("cls");
-		imprimirmapa();
 		printf("\ncoordenadas invalidas\n\n");
+		imprimirmapa();
 	}
 	for (;;)
 	{
@@ -209,11 +214,12 @@ void marcarsoldados()
 		{
 			system("cls");
 			heroisul(i, j);
+			//printf("\ncoordenadas invalidas\n\n");
 			imprimirmapa();
 			break;
 		}
 		system("cls");
-		imprimirmapa();
 		printf("\ncoordenadas invalidas\n\n");
+		imprimirmapa();
 	}
 }
