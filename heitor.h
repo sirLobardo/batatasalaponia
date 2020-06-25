@@ -144,14 +144,41 @@ void atkespn(){
 		
     		}
     		else if((coln - col <= 10 || coln - col >= -10) && coln > 1 && coln < 12)
-    		{
-    			guerra = mapa[lin][col]; 
+    		{ 
     			mapa [lin][col] = ' ';
-				mapa [lin][coln] = guerra;
+    			mapa [lin][coln] = '#';
 				system("cls");
 				imprimirmapa();
 		
 			}
+			else
+			{
+				system("cls");
+				imprimirmapa();
+				printf("\ncoordenadas invalidas\n");
+				movimento1();
+			}
+		}
+}
+	void movespsul()
+{
+	int lin, col, linn, coln, linv, colv;
+	char especial;
+		
+		
+	printf("Coloque as coordenadas do soldado para mover e para onde deve ir:  ");
+	scanf("%d %d %d %d", &lin, &col, &linn, &coln);
+		if(col > 1 && lin > 7 && col < 12 && lin < 12)
+		{
+			if(mapa[lin][col] == '@' && abs(linv - lin) == abs(colv - col))
+			{
+				especial = mapa[lin][col]; 
+				mapa [lin][col] = ' ';
+				mapa [linn][col] = especial;
+				system("cls");
+				imprimirmapa();
+		
+    		}
 			else
 			{
 				system("cls");
