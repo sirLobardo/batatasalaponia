@@ -4,7 +4,7 @@ void movimento1()
 		
 		
 	printf("Coloque as coordenadas do soldado para mover e para onde deve ir:  ");
-	scanf("%d %d %d %d", &lin, &col, &linn, &coln);
+	scanf(" %d %d %d %d", &lin, &col, &linn, &coln);
 		if(lin > 1 && col > 1 && lin < 6 && col < 12)
 		{
 			if((linn - lin == 1 || linn - lin == -1) && linn > 1 && linn < 6 )
@@ -41,7 +41,7 @@ void movimento2()
 		
 		
 	printf("Coloque as coordenadas do soldado para mover e para onde deve ir:  ");
-	scanf("%d %d %d %d", &lin, &col, &linn, &coln);
+	scanf(" %d %d %d %d", &lin, &col, &linn, &coln);
 		if(col > 1 && lin > 7 && col < 12 && lin < 12)
 		{
 			if((linn - lin == 1 || linn - lin == -1) && linn < 12 && linn > 7)
@@ -131,7 +131,7 @@ void atkespn(){
 		
 		
 	printf("Coloque as coordenadas do soldado para mover e para onde deve ir:  ");
-	scanf("%d %d %d %d", &lin, &col, &linn, &coln);
+	scanf(" %d %d %d %d", &lin, &col, &linn, &coln);
 		if(lin > 1 && col > 1 && lin < 6 && col < 12)
 		{
 			if((linn - lin <= 3 || linn - lin >= -3) && linn > 1 && linn < 6 )
@@ -167,7 +167,7 @@ void atkespn(){
 		
 		
 	printf("Coloque as coordenadas do soldado para mover e para onde deve ir:  ");
-	scanf("%d %d %d %d", &lin, &col, &linn, &coln);
+	scanf(" %d %d %d %d", &lin, &col, &linn, &coln);
 		if(col > 1 && lin > 7 && col < 12 && lin < 12)
 		{
 			if(mapa[lin][col] == '@' && abs(linv - lin) == abs(colv - col))
