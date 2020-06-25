@@ -1,5 +1,33 @@
 int testen = 0,  testes = 0;
 
+void checkn(){
+int lin, col, vitoria;
+	for(lin=2; lin<6; lin++){
+			for(col=2; col<12; col++){
+			  	vitoria += mapa[lin][col];
+			  	if(vitoria == 1280){   					
+			  			printf(" sul venceu \n");
+			  			system("pause");
+			  			exit(0);
+			  	}
+			}
+		}
+	}
+
+void checks(){
+int lin, col, vitoria;
+	for(lin=8; lin<11; lin++){
+			for(col=2; col<12; col++){
+			  	vitoria += mapa[lin][col];
+			  	if(vitoria == 1280){   					
+			  			printf(" norte venceu \n");
+			  			system("pause");
+			  			exit(0);
+			  	}
+			}
+		}
+	}
+
 void atkmovn()
 {
 	char x;
@@ -9,7 +37,7 @@ void atkmovn()
         	if(x == 'a'|| x == 'A')
 			{
         		ataque();
-				testen++;					
+				checks();					
 			}
 			else if( x == 'm'|| x == 'M')
 			{
@@ -21,12 +49,12 @@ void atkmovn()
 			}
 			else if(x == 's' || x == 'S'){
 				atkespn();
-				testen++;
+				checks();
 			}
 			
 			else
 			{
-				printf("seleção invalida");
+				printf("seleção invalida\n");
 				system("pause");
 				atkmovn();
 			}
@@ -40,7 +68,7 @@ void atkmovs()
         	if(x == 'a'|| x == 'A')
 			{
         		ataque();
-				testes++;					
+				checkn();					
 			}
 			else if( x == 'm'|| x == 'M')
 			{
@@ -52,11 +80,11 @@ void atkmovs()
 			}
 			else if(x == 's' || x == 'S'){
 				atkesps();
-				testes++;
+				checkn();
 			}
 			else
 			{
-				printf("seleção invalida");
+				printf("seleção invalida\n");
 				system("pause");
 				atkmovs();
 			}
