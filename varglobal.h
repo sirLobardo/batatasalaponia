@@ -31,3 +31,5 @@ void atkmovs();
 void jogar();
 void movimento2();
 void atkesps();
+void movespno();
+void movespsul();
